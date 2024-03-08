@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common'
-import { SitePilotService } from './site-pilot.service'
+import { SitePilotService } from 'src/site-pilot.service'
 
 @Controller()
 export class SitePilotController {

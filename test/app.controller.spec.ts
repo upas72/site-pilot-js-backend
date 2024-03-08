@@ -1,22 +1,22 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { AppController } from '../src/site-pilot.controller';
-import { AppService } from '../src/site-pilot.service';
+import { Test, TestingModule } from '@nestjs/testing'
+import { SitePilotController } from 'src/site-pilot.controller'
+import { SitePilotService } from 'src/site-pilot.service'
 
-describe('AppController', () => {
-  let appController: AppController;
+describe('SitePilotController', () => {
+  let sitePilotController: SitePilotController
 
   beforeEach(async () => {
     const app: TestingModule = await Test.createTestingModule({
-      controllers: [AppController],
-      providers: [AppService],
-    }).compile();
+      controllers: [SitePilotController],
+      providers: [SitePilotService],
+    }).compile()
 
-    appController = app.get<AppController>(AppController);
-  });
+    sitePilotController = app.get<SitePilotController>(SitePilotController)
+  })
 
-  describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
-    });
-  });
-});
+  describe('Get Health', () => {
+    it('should return "OK!"', () => {
+      expect(sitePilotController.getHealth()).toBe('OK!')
+    })
+  })
+})

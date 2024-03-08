@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common'
-import { SitePilotController } from './site-pilot.controller'
-import { SitePilotService } from './site-pilot.service'
+import { SitePilotController } from 'src/site-pilot.controller'
+import { SitePilotService } from 'src/site-pilot.service'
 
 @Module({
   imports: [],

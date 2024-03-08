@@ -1,5 +1,5 @@
 import { NestFactory } from '@nestjs/core'
-import { SitePilotModule } from './site-pilot.module'
+import { SitePilotModule } from 'src/site-pilot.module'
 
 async function bootstrap() {
   const app = await NestFactory.create(SitePilotModule)
