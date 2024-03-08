@@ -1,5 +1,5 @@
-import { Controller, Get } from '@nestjs/common';
-import { SitePilotService } from './site-pilot.service';
+import { Controller, Get } from '@nestjs/common'
+import { SitePilotService } from './site-pilot.service'
 
 @Controller()
 export class SitePilotController {
@@ -7,6 +7,6 @@ export class SitePilotController {
 
   @Get('health')
   getHealth(): string {
-    return this.sitePilotService.getHealth();
+    return this.sitePilotService.getHealth()
   }
 }
