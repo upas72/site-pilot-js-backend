@@ -65,11 +65,5 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  },
-  "importSort": {
-    ".ts, .js": {
-      "parser": "typescript",
-      "style": "module"
-    }
   }
 }
